@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvEmployers = new System.Windows.Forms.DataGridView();
             this.btnEditEmployer = new System.Windows.Forms.Button();
             this.btnAddNew = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployers)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvEmployers
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(27, 26);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(769, 193);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvEmployers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmployers.Location = new System.Drawing.Point(27, 26);
+            this.dgvEmployers.Name = "dgvEmployers";
+            this.dgvEmployers.RowTemplate.Height = 25;
+            this.dgvEmployers.Size = new System.Drawing.Size(769, 193);
+            this.dgvEmployers.TabIndex = 0;
             // 
             // btnEditEmployer
             // 
@@ -69,17 +69,17 @@
             this.ClientSize = new System.Drawing.Size(960, 248);
             this.Controls.Add(this.btnAddNew);
             this.Controls.Add(this.btnEditEmployer);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvEmployers);
             this.Name = "EmployerForm";
             this.Text = "WHManager - Employers";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployers)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView dgvEmployers;
         private Button btnEditEmployer;
         private Button btnAddNew;
     }

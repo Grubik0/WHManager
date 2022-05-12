@@ -31,9 +31,6 @@
             this.dgvMainView = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnShow = new System.Windows.Forms.Button();
-            this.tbMonth = new System.Windows.Forms.TextBox();
-            this.tbYear = new System.Windows.Forms.TextBox();
-            this.tbEmployer = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,6 +38,9 @@
             this.btnOpenMonth = new System.Windows.Forms.Button();
             this.btnAddHours = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
+            this.cbEmployer = new System.Windows.Forms.ComboBox();
+            this.cbYear = new System.Windows.Forms.ComboBox();
+            this.cbMonth = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMainView)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -56,10 +56,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cbMonth);
+            this.groupBox1.Controls.Add(this.cbYear);
+            this.groupBox1.Controls.Add(this.cbEmployer);
             this.groupBox1.Controls.Add(this.btnShow);
-            this.groupBox1.Controls.Add(this.tbMonth);
-            this.groupBox1.Controls.Add(this.tbYear);
-            this.groupBox1.Controls.Add(this.tbEmployer);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
@@ -77,27 +77,6 @@
             this.btnShow.TabIndex = 6;
             this.btnShow.Text = "SHOW";
             this.btnShow.UseVisualStyleBackColor = true;
-            // 
-            // tbMonth
-            // 
-            this.tbMonth.Location = new System.Drawing.Point(72, 77);
-            this.tbMonth.Name = "tbMonth";
-            this.tbMonth.Size = new System.Drawing.Size(157, 23);
-            this.tbMonth.TabIndex = 5;
-            // 
-            // tbYear
-            // 
-            this.tbYear.Location = new System.Drawing.Point(72, 48);
-            this.tbYear.Name = "tbYear";
-            this.tbYear.Size = new System.Drawing.Size(157, 23);
-            this.tbYear.TabIndex = 4;
-            // 
-            // tbEmployer
-            // 
-            this.tbEmployer.Location = new System.Drawing.Point(72, 19);
-            this.tbEmployer.Name = "tbEmployer";
-            this.tbEmployer.Size = new System.Drawing.Size(157, 23);
-            this.tbEmployer.TabIndex = 3;
             // 
             // label3
             // 
@@ -166,6 +145,30 @@
             this.btnPrint.UseVisualStyleBackColor = true;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
+            // cbEmployer
+            // 
+            this.cbEmployer.FormattingEnabled = true;
+            this.cbEmployer.Location = new System.Drawing.Point(82, 19);
+            this.cbEmployer.Name = "cbEmployer";
+            this.cbEmployer.Size = new System.Drawing.Size(147, 23);
+            this.cbEmployer.TabIndex = 7;
+            // 
+            // cbYear
+            // 
+            this.cbYear.FormattingEnabled = true;
+            this.cbYear.Location = new System.Drawing.Point(82, 48);
+            this.cbYear.Name = "cbYear";
+            this.cbYear.Size = new System.Drawing.Size(147, 23);
+            this.cbYear.TabIndex = 8;
+            // 
+            // cbMonth
+            // 
+            this.cbMonth.FormattingEnabled = true;
+            this.cbMonth.Location = new System.Drawing.Point(82, 77);
+            this.cbMonth.Name = "cbMonth";
+            this.cbMonth.Size = new System.Drawing.Size(147, 23);
+            this.cbMonth.TabIndex = 9;
+            // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -191,9 +194,6 @@
         private DataGridView dgvMainView;
         private GroupBox groupBox1;
         private Button btnShow;
-        private TextBox tbMonth;
-        private TextBox tbYear;
-        private TextBox tbEmployer;
         private Label label3;
         private Label label2;
         private Label label1;
@@ -201,5 +201,8 @@
         private Button btnOpenMonth;
         private Button btnAddHours;
         private Button btnPrint;
+        private ComboBox cbMonth;
+        private ComboBox cbYear;
+        private ComboBox cbEmployer;
     }
 }

@@ -100,7 +100,9 @@
             // 
             // tbEmpID
             // 
+            this.tbEmpID.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tbEmpID.Location = new System.Drawing.Point(164, 26);
+            this.tbEmpID.MaxLength = 3;
             this.tbEmpID.Name = "tbEmpID";
             this.tbEmpID.Size = new System.Drawing.Size(180, 23);
             this.tbEmpID.TabIndex = 6;
@@ -115,6 +117,7 @@
             // tpEmpOIB
             // 
             this.tpEmpOIB.Location = new System.Drawing.Point(164, 113);
+            this.tpEmpOIB.MaxLength = 11;
             this.tpEmpOIB.Name = "tpEmpOIB";
             this.tpEmpOIB.Size = new System.Drawing.Size(180, 23);
             this.tpEmpOIB.TabIndex = 9;
