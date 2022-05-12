@@ -8,9 +8,15 @@ namespace WHManager.Classes
 {
     public static class ErrorCheck
     {
-        public static bool StringLengthCheck(int maxLength, string input)
+        public static bool StringLengthCheckMax(int maxLength, string input)
         {
             if (input.Length <= maxLength) return true;
+            else return false;
+        }
+
+        public static bool StringLengthCheckTotal(int maxLength, string input)
+        {
+            if (input.Length == maxLength) return true;
             else return false;
         }
     }
