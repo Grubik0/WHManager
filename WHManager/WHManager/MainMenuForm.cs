@@ -9,7 +9,7 @@ namespace WHManager
 
         private void btnAddEmployer_Click(object sender, EventArgs e)
         {
-            var formAddEmployer = new AddEmployerForm();
+            var formAddEmployer = new EmployerForm();
             formAddEmployer.ShowDialog();
         }
 

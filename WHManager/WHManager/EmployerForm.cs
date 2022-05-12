@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace WHManager
 {
-    public partial class AddEmployerForm : Form
+    public partial class EmployerForm : Form
     {
-        public AddEmployerForm()
+        public EmployerForm()
         {
             InitializeComponent();
+        }
+
+        private void btnAddNew_Click(object sender, EventArgs e)
+        {
+            var formAddNewEmployer = new AddNewEmployerForm();
+            formAddNewEmployer.ShowDialog();
         }
     }
 }
